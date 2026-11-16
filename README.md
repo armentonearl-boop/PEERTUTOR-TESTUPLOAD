@@ -60,4 +60,4 @@ See `TEST_CHECKLIST.md` for the list of things we tested.
 
 ## Author
 
-Capstone project - add your name, section and school year here.
+Capstone project - EARL VINCENT ARMENTON / DBSYS.
