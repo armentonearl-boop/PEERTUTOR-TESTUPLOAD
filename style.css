@@ -1,0 +1,69 @@
+/* style.css - just a few touches on top of Bootstrap */
+
+body {
+    background: #f1f5f9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar {
+    background: #0284c7;
+}
+
+.main-box {
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.card-box {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.login-box {
+    max-width: 420px;
+    margin: 50px auto;
+}
+
+/* little colored labels for the session status */
+.badge-pending   { background: #f59e0b; }
+.badge-accepted  { background: #0284c7; }
+.badge-completed { background: #16a34a; }
+.badge-declined, .badge-cancelled, .badge-no_show { background: #dc2626; }
+
+.reminder {
+    background: #fef9c3;
+    border-left: 4px solid #eab308;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+}
+
+/* when printing / saving the report as PDF, hide the menu and the buttons */
+@media print {
+    .topbar, .btn { display: none !important; }
+    body { background: white; }
+    .card-box { box-shadow: none; border: 1px solid #ddd; }
+}
+
+/* logo: small white badge in the top bar, bigger one above the login and register forms */
+.logo-badge {
+    background: white;
+    border-radius: 10px;
+    padding: 3px 6px;
+    margin-right: 10px;
+    display: inline-flex;
+}
+
+.logo-badge img {
+    height: 38px;
+    width: auto;
+}
+
+.auth-logo {
+    display: block;
+    height: 110px;
+    width: auto;
+    margin: 0 auto 10px auto;
+}

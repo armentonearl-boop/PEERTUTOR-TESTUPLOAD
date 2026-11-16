@@ -1,0 +1,3 @@
+# nothing secret should be uploaded to GitHub
+.vscode/
+*.log
